@@ -73,12 +73,6 @@ ip link set mybridge up
 iptables -t nat -A POSTROUTING -s 172.17.0.0/16 -j MASQUERADE
 ```
 
-3. Host Network
-```bash
-# Host network kullanımı
-docker run --network host nginx
-```
-
 ### Mount Namespace
 
 Filesystem mount noktalarını izole eder.
